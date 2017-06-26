@@ -1,0 +1,78 @@
+6
+
+air
+0
+0.
+1. 0.000001
+-
+
+Aluminium
+0
+0.
+-20. 8.
+*
+
+Gold
+2
+11
+582.085411 0.29
+616.836779 0.21
+659.490386 0.14
+704.45564 0.13
+756.001174 0.14
+821.087368 0.16
+891.972609 0.17
+984.001529 0.22
+1087.580637 0.27
+1215.531300 0.35
+1393.080816 0.43
+11
+582.085411 2.863
+616.836779 3.272
+659.490386 3.697
+704.45564 4.103
+756.001174 4.542
+821.087368 5.083
+891.972609 5.663
+984.001529 6.35
+1087.580637 7.15
+1215.531300 8.145
+1393.080816 9.519
+%
+
+BIG
+0
+0.
+2.1 0.00000001
+&
+
+Silicon
+0
+500.
+18.464 0.627
+!
+
+Silicon
+0
+250.
+-10.6936 11.477
+!
+
+
+
+------------------------------------
+Notes
+
+6 // Number of substances.
+
+For each substance:
+Air // Name
+0 // Flag of definition. Possible values: 0, 1, 2
+
+(if 0)
+0. - // The wavelength at which permittivity eps', eps''(or <= 0 if you do not need to set the frequency dependence) are given.
+eps', eps'' // complex permittivity (eps', eps'').
+(if 1) Empty. The program will use Drude formulas. 
+(if 2) Experimental data for eps' and eps eps'' separately. wavelenth - value(eps' or eps'') pairs leaded by number of points.
+
+- // Symbol used to define this substance in program and input files.

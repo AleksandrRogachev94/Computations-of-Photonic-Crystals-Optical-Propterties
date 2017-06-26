@@ -1,0 +1,26 @@
+0
+1130.
+0.
+0
+100 100
+- &
+0.5
+SUBS_DB.subs
+Solar_cell
+
+------------------------------------------------------------------------------------------
+Notes:
+0 // Flag. Possible values: 0, 1, 2. 0 => computations for certain wavelength. 1 => computations for the given wavelength gap, 2 => computations of the angle dispersion
+(if 0) 1130. // The wavelength of the incident light (nm).
+(if 1) 300. 700. 10. // start wavelength, finish wavelength, step. 
+(if 2) 600. 800. 4. 0. 20. 0.5 // start wavelength, finish wavelength, step, start angle, finish angle, step.
+(if not 2) 45. // Angle of incidence to the normal (degrees).
+0 // Type of polarization of the incident wave. 0 is the p-wave, 1 is the s-wave.
+100 100 // The number of positive, negative harmonics of the spatial Fourier transform.
+- & // Substances for upper and lower infinite mediums. Must correspond to substances file.
+0.5 // Discrete along z-axis for field distributions (nm).
+
+SUBS_DB.subs // The name of the substances file.
+Solar_cell // Common name for all other files: Input - .smpl(layers samples), .crys(crystal structure);
+  Output - .outts(transmittance spectrum), .outrs(reflectance spectrum), .outas(absorption spectrum), .outd(field distributions),
+  .outtad(transmittance angle dispersion spectrum) , .outrad(reflectance angle dispersion spectrum), .outaad(absorption angle dispersion spectrum)
