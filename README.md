@@ -1,6 +1,6 @@
 # Photonic Crystals
 
-Console program for simulation of the optical properties of arbitrary one-dimensional periodic photonic and plasmonic crystals using Rigorous coupled-wave analysis (RCWA). It allows calculations of spectra of transmittance, reflection, absorption, and angle distribution as well as the fields distributions within the structure. The program is designed for researching photonic crystals on a multi-core personal computer. It uses parallel calculations using openMP technology.
+Console program for simulation of the optical properties of arbitrary one-dimensional periodic photonic and plasmonic crystals using Rigorous coupled-wave analysis (RCWA). It allows calculations of spectra of transmittance, reflection, absorption, and angle distribution as well as the fields distributions within the structure. The program is designed for researching of photonic crystals on a multi-core personal computer. It uses parallel calculations using openMP technology.
 
 ## Installation
 
